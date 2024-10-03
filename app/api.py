@@ -27,7 +27,8 @@ class KittiesCRUDViewSet(mixins.CreateModelMixin,
     filterset_fields = ['breed', 'breed__name']
 
 
-class BreedsAPIView(generics.ListAPIView):
+class BreedsAPIViewSet(mixins.ListModelMixin,
+                    viewsets.GenericViewSet):
     queryset = Breed.objects.all()
     serializer_class = BreedSerilizer
 
