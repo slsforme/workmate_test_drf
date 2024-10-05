@@ -33,6 +33,8 @@ class Breed(models.Model):
 
     class Meta:
         verbose_name="Порода"
+        verbose_name_plural="Породы"
+
 
 
 class Kitty(models.Model):
@@ -69,7 +71,6 @@ class Kitty(models.Model):
     
 
 
-        verbose_name_plural="Породы"
     
     
 
